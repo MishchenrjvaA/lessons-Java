@@ -11,7 +11,7 @@ public class Main {
 	&& - логическое и;
 	||  - логическое или;
 	 */
-	int age = 21;
+	/*int age = 21;
 	if (age>=18) {
 	    System.out.println("доступ разрешен");
         } else {
@@ -21,7 +21,7 @@ public class Main {
             System.out.println(a);
         } else if (b > a && b > c) ;{
             System.out.println(b);
-        } else
+        }
     }
 
         }
@@ -29,7 +29,7 @@ public class Main {
 	    switch (month)  {
             case 1:
                 System.out.println("январь");
-	    break;
+            break;
             case 2:
                 System.out.println("февраль");
                 break;
@@ -62,11 +62,15 @@ public class Main {
                 break;
             case 12:
                 System.out.println("декабрь");
-                break;
+              break;
             default:
                 System.out.println("такого месяца нет");
         }
-        // оператор %
-                System.out.println(5 % 3);
+       	    String name = "Vasya";
+	    switch (name){
+        case "Vasya":
+            System.out.println("Vasya");
+            break;*/
+    }
     }
 
