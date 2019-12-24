@@ -15,5 +15,4 @@ public class MyException extends Exception{
         return "MyException error";
     }
 
-
 }
