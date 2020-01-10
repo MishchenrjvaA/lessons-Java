@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -97,6 +99,46 @@ public class Main {
         // приведение регистров
         System.out.println(str.toLowerCase());
         System.out.println(str.toUpperCase());
+
+        //форматирование строк
+        /*
+           Флаги форматирования:
+        %s вставляется строка
+        %d целое число(int, long)
+        %f вещественное число ()
+        %b для типа boolean
+        %c char (символ который должен вывести)
+        %t дл вывода даты
+        %% вывод символа процент
+         должен совпадать и тип и порядок следования
+
+         %10.2f до точки - указ мин кол-во символов для числа, после точки - верхняя граница,
+         значнеие до  точки можно опустить
+         \n переход на новую строку (виртуальный enter)
+         \t символ табуляции
+         \b удаляет предыдущий символ (backspace)
+         \\ - выводит слеш, если нужно 2\ пишем 4\
+
+
+         */
+
+        int age  = 25;
+
+        Date d = new Date();
+        String sFormat = String.format(
+                "Меня зовут %10s.\nМне %d лет.\bМой рост %10.2f см. Я хочу знать java на 100%%. сегодня %tc", "All",30,170.1f,d);
+        System.out.println(sFormat);
+        String sFormat2 = String.format(
+                "Мое счастливое число %2$d. Мой любимый цвет %s. Я ношу %1$s брюки", "RED", 40);  // 2$ - номер аргумента
+        System.out.println(sFormat2);
+        // преобразование нестроковых объектов в строки
+        int a = 150;
+        String sa = String.valueOf(a);
+        System.out.println(sa);
+        double h = 25.52;
+        String sh = String.valueOf(h);
+        System.out.println(sh);
+
 
     }
 
